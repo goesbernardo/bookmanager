@@ -3,6 +3,12 @@ language: java
 sudo: true
 jdk: openjdk14
 install: true
+addons:
+  sonarcloud:
+    organization: goesbernardo
+    token: c8fac70ba54e9544b347004df59cc7ee940a91ad
+script:
+  - mvn clean package sonar:sonar -P sonar
 before_install:
   - gem install rake
   - mvn -Dmaven.test.skip package
