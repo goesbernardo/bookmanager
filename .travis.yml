@@ -5,6 +5,7 @@ jdk: openjdk14
 install: true
 before_install:
   - gem install rake
+  - mvn -Dmaven.test.skip package
 cache:
   directories:
     - $HOME/.m2
