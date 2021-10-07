@@ -6,6 +6,7 @@ install: true
 before_install:
   - gem install rake
   - mvn -Dmaven.test.skip package
+  - chmod a+x ./mvnw
 cache:
   directories:
     - $HOME/.m2
