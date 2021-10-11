@@ -37,5 +37,10 @@ public class AuthorService {
         return authorRepository.findAll().stream().map(authorMapper::toDTO).collect(Collectors.toList());
     }
 
+    public void deleteById(Long id){
+
+        authorRepository.deleteById(id);
+    }
+
 
 }

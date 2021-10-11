@@ -32,4 +32,6 @@ public interface AuthorControllerDocs {
             @ApiResponse(code = 500, message = "bad request author")
     })
     List<AuthorDTO> findAll(AuthorDTO authorDTO);
+
+
 }
