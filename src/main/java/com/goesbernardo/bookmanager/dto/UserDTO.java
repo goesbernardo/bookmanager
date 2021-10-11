@@ -1,2 +1,4 @@
-package com.goesbernardo.bookmanager.dto;public class UserDTO {
+package com.goesbernardo.bookmanager.dto;
+
+public class UserDTO {
 }
